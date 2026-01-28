@@ -14,5 +14,5 @@ import{i as p,S as g}from"./assets/vendor-B2mb6eXk.js";(function(){const t=docum
 						</figure>
 					</a>
 				</li>
-		`).join("")}const E=document.querySelector(".search-form"),i=document.querySelector(".gallery"),f=document.createElement("div");E.addEventListener("submit",P);async function P(r){r.preventDefault(),p.destroy(),i.innerHTML="",$();const t=new FormData(r.target),{search:o}=Object.fromEntries(t.entries());if(!o.trim()){u(c.info,l.blue),i.innerHTML="";return}try{const a=await b(o.trim());O(a)&&S(a,i)}catch(a){u(c.exception+a,l.orange)}r.target.reset()}function $(){f.classList.add("loader"),i.append(f)}function O(r){return r?r&&r.totalHits===0?(u(c.warning,l.red),i.innerHTML="",!1):!0:(i.innerHTML="",!1)}
+		`).join("")}const E=document.querySelector(".form"),i=document.querySelector(".gallery"),f=document.createElement("div");E.addEventListener("submit",P);async function P(r){r.preventDefault(),p.destroy(),i.innerHTML="",$();const t=new FormData(r.target),{search:o}=Object.fromEntries(t.entries());if(!o.trim()){u(c.info,l.blue),i.innerHTML="";return}try{const a=await b(o.trim());O(a)&&S(a,i)}catch(a){u(c.exception+a,l.orange)}r.target.reset()}function $(){f.classList.add("loader"),i.append(f)}function O(r){return r?r&&r.totalHits===0?(u(c.warning,l.red),i.innerHTML="",!1):!0:(i.innerHTML="",!1)}
 //# sourceMappingURL=index.js.map
