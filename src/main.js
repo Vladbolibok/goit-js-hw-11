@@ -5,7 +5,7 @@ import { MESSAGES, MESSAGES_BG_COLORS, showInfoMessage } from './js/helpers.js';
 import { getGalleryData } from './js/pixabay-api';
 import { renderGallery } from './js/render-functions';
 
-const form = document.querySelector('.search-form');
+const form = document.querySelector('.form');
 const gallery = document.querySelector('.gallery');
 const div = document.createElement('div');
 
